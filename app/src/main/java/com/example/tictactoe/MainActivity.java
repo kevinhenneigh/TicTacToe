@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
         final Button button8 = findViewById(R.id.button8);
         final Button button9 = findViewById(R.id.button9);
         Button newGame = findViewById(R.id.newGameButton);
+        final TextView playerTurn = findViewById(R.id.textView);
         newGame.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        playerTurn.setText("Player X's Turn");
                         button1.setText("");
                         button2.setText("");
                         button3.setText("");
@@ -44,7 +46,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonOne =
                                 findViewById(R.id.button1);
-                        buttonOne.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonOne.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button1.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -54,7 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonTwo =
                                 findViewById(R.id.button2);
-                        buttonTwo.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonTwo.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button2.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -64,7 +80,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonThree =
                                 findViewById(R.id.button3);
-                        buttonThree.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonThree.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button3.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -74,7 +97,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonFour =
                                 findViewById(R.id.button4);
-                        buttonFour.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonFour.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button4.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -84,7 +114,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonFive =
                                 findViewById(R.id.button5);
-                        buttonFive.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonFive.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button5.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -94,7 +131,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonSix =
                                 findViewById(R.id.button6);
-                        buttonSix.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonSix.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button6.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -104,7 +148,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonSeven =
                                 findViewById(R.id.button7);
-                        buttonSeven.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonSeven.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button7.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -114,7 +165,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonEight =
                                 findViewById(R.id.button8);
-                        buttonEight.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonEight.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button8.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
@@ -124,7 +182,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         TextView buttonNine =
                                 findViewById(R.id.button9);
-                        buttonNine.setText("X");
+                        if (playerTurn.getText().equals("Player X's Turn")) {
+                            buttonNine.setText("X");
+                            playerTurn.setText("Player O's Turn");
+                        }
+                        else {
+                            button9.setText("O");
+                            playerTurn.setText("Player X's Turn");
+                        }
                     }
                 }
         );
