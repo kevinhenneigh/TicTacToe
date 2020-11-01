@@ -33,7 +33,7 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="20dp"
-        android:text="@string/button1"
+        android:text=""
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

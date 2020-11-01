@@ -12,16 +12,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-        Button button6 = findViewById(R.id.button6);
-        Button button7 = findViewById(R.id.button7);
-        Button button8 = findViewById(R.id.button8);
-        Button button9 = findViewById(R.id.button9);
+        final Button button1 = findViewById(R.id.button1);
+        final Button button2 = findViewById(R.id.button2);
+        final Button button3 = findViewById(R.id.button3);
+        final Button button4 = findViewById(R.id.button4);
+        final Button button5 = findViewById(R.id.button5);
+        final Button button6 = findViewById(R.id.button6);
+        final Button button7 = findViewById(R.id.button7);
+        final Button button8 = findViewById(R.id.button8);
+        final Button button9 = findViewById(R.id.button9);
         Button newGame = findViewById(R.id.newGameButton);
+        newGame.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        button1.setText("");
+                        button2.setText("");
+                        button3.setText("");
+                        button4.setText("");
+                        button5.setText("");
+                        button6.setText("");
+                        button7.setText("");
+                        button8.setText("");
+                        button9.setText("");
+                    }
+                }
+        );
 
         button1.setOnClickListener(
                 new View.OnClickListener() {
